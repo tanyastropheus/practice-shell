@@ -2,14 +2,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - entry point
+ * main - display prompt, read command line input, and write input to stdout
  *
  * Return: 0 if successful
  */
 
 int main(void)
 {
-	ssize_t w_prpt, w_comd, usr_comd;
+	ssize_t w_comd;
 	size_t size;
 	char *buf;
 
