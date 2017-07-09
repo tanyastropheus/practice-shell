@@ -17,18 +17,18 @@ int main(void)
 		     * when buf == NULL
 		     */
 
-	w_prpt = write(STDOUT_FILENO, "$ ", 2);
-	if (w_prpt == -1)
+	if (write(STDOUT_FILENO, "$ ", 2) == -1)
 	{
 		perror("Error: cannot display prompt\n");
 		return (-1);
 	}
-	usr_comd = getline(&buf, &size, stdin);
-	if (usr_comd == -1)
+
+	if (getline(&buf, &size, stdin) == -1)
 	{
 		perror("Error: cannot read line\n");
 		return (-1);
 	}
+
 	w_comd = write(STDOUT_FILENO, buf, size);
 	if ((size_t) w_comd != size)
 	{
