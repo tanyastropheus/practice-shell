@@ -1,8 +1,10 @@
 #include <unistd.h>
 /**
- * main - Entry Point
+ * main - print all commandline arguments, without using ac
+ *
  * @argc: number of commandline arguments
  * @argv: list of commandline arguments
+ *
  * Return: 0 if successful
  */
 
