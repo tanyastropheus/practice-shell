@@ -25,9 +25,9 @@ int main(void)
 		return (-1);
 	}
 
-	r_count = getline(&bug, &size, stdin);
+	r_count = getline(&buf, &size, stdin);
 
-	if ((r_count == -1)
+	if (r_count == -1)
 	{
 		errno = EIO;
 		perror("getline() cannot read input");
