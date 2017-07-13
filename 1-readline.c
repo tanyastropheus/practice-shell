@@ -5,6 +5,10 @@
 /**
  * main - display prompt, read command line input, and write input to stdout
  *
+ * Description:
+ * 1) getline() calls malloc() to allocate memory for the line
+ * 2) program need to call free() after invoking this function
+ *
  * Return: 0 if successful
  */
 
