@@ -6,7 +6,7 @@
  * @name: name of the environment variable
  *
  * Description:
- * 1) _strdup() invokes malloc() to allocate memory on heap for the string
+ * 1) function calls _strdup() which invokes malloc()
  * 2) program need to call free() to free heap
  *
  * Return: pointer to the corresponding value of the environment variable
