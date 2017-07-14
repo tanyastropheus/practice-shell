@@ -3,6 +3,11 @@
 /**
  * link_dir - build a linked list of the PATH directories
  *
+ * Description:
+ * 1) function calls _getenv() which calls _strdup() which invokes malloc()
+ * 2) function calls add_nodedir_end() which calls malloc()
+ * 3) program need to call free() to release heap memory
+ *
  * Return: a pointer to the head of the linked list
  */
 
