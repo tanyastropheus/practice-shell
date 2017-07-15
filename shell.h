@@ -32,7 +32,8 @@ int print_dir(void);
 dir_t **link_dir(dir_t **head);
 dir_t *add_nodedir_end(dir_t **head, char *s);
 dir_t *traverse_end(dir_t *h);
-
+char *_strcat(char *dest, char *src);
+char *_strcpy(char *dest, char *src);
 /* environment variables */
 extern char **environ;
 
